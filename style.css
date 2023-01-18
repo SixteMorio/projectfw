@@ -1,0 +1,310 @@
+body {
+    font-family: Nunito, sans-serif;
+    margin: 0;
+}
+
+/*couleur de différents éléments*/
+.title, .textmovie, #sectiontwo h2, .texttuto {
+    color: white;
+}
+
+/*mise en forme des titres*/
+.textmovie h1 {
+    font-family: "Futura", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+}
+
+h2 {
+    font-family: "Futura", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+h4 {
+    font-family: "Futura", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+h6 {
+    display: flex;
+    color: white;
+    font-size: 16px;
+    margin: 0;
+}
+
+.textmovie {
+    position: absolute;
+    padding-top: 200px;
+    padding-left: 225px;
+    font-size: xx-large;
+}
+
+/*mise en forme de la vidéo*/
+.movie {
+    width: 100%;
+    height: 65%;
+}
+
+/*réglage divers*/
+.titlecoach {
+    padding: 1px;
+    margin-bottom: 60px;
+    justify-content: center;
+}
+
+/*mise en forme des différentes sections*/
+#sectionone {
+    display: flex;
+    position: relative;
+}
+
+#sectiontwo {
+    background-image: url("vibz-assets/vibz-assets/black_pink_split_background.png");
+    background-size: 102% 102%;
+    background-repeat: no-repeat;
+}
+
+#sectiontwo .titleactu {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+    padding: 1px;
+}
+
+#sectionthree {
+    background-image: url("vibz-assets/vibz-assets/white_pink_split_background.png");
+    background-repeat: no-repeat;
+}
+
+#sectionthree h2 {
+    display: flex;
+    justify-content: center;
+    font-size: xx-large;
+}
+
+/*affichage des éléments de la parti actualité*/
+.everytuto{
+    display: flex;
+    margin-top: 120px;
+}
+
+.imgtuto {
+    display: flex;
+    height: 288px;
+    border-radius: 10%;
+    box-shadow: 30px;
+    margin-left: 200px;
+    width: 50%;
+
+}
+
+.texttuto {
+    width: 50%;
+    padding-bottom: 200px;
+}
+
+/*bar de navigation*/
+#logo {
+    width: 60px;
+    margin-top: 10px;
+    margin-left: 185px;
+    margin-right: 25px;
+}
+
+#header {
+    position: fixed;
+    background-color: black;
+    opacity: 0.61;
+    width: 100%;
+    z-index: 2;
+}
+
+
+#nav a {
+    margin-right: 40px;
+    margin-left: 0;
+    margin: 0px 14px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    vertical-align: middle;    
+}
+
+/*les boutons*/
+#btnone {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: #eb8994;
+    border-color: #eb8994;
+    color: white;
+    width: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#btntwo {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10%;
+    background-color: white;
+    border-color: white;
+    color: black;
+    width: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* grille pour mettre en place les coachss*/
+.grille {   
+    display: grid; 
+    gap: 40px;
+    grid-template-areas:
+        "a b c"
+        "d e f"
+        "g h i";
+
+    margin-bottom: 400px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    opacity: 0;
+}
+
+.grille p {
+    text-align: center;
+    font-family: Nunito, sans-serif;
+    font-size: 18px;
+    font-weight: 700;    
+}
+
+.coachone {
+    grid-area: a;
+}
+
+.coachone img {
+    border-radius: 125px;
+}
+
+.coachtwo {
+    grid-area: b;
+}
+
+.coachtwo img {
+    border-radius: 125px;
+}
+
+.coachthree {
+    grid-area: c;
+}
+
+.coachthree img {
+    border-radius: 125px;
+}
+
+.coachfour {
+    grid-area: d;
+}
+
+.coachfour img {
+    border-radius: 125px;
+}
+
+.coachfive {
+    grid-area: e;
+}
+
+.coachfive img {
+    border-radius: 125px;
+}
+
+.coachsix {
+    grid-area: f;
+}
+
+.coachsix img {
+    border-radius: 125px;
+}
+
+.coachseven {
+    grid-area: g;
+}
+
+.coachseven img {
+    border-radius: 125px;
+}
+
+.coachheight {
+    grid-area: h;
+}
+
+.coachheight img {
+    border-radius: 125px;
+}
+
+.more {
+    grid-area: i;
+}
+
+.more img {
+    border-radius: 125px;
+}
+
+/*hover des boutons*/
+#btnone:hover {
+    color: black;
+    scale: 1.1;
+}
+
+#btntwo:hover {
+    background-color:black ;
+    color: white;
+}
+
+/*hover de la nav*/
+#header #nav #home:hover {
+    color: #eb8994;
+}
+
+#header #nav #choregraphy:hover {
+    color: #eb8994;
+}
+
+#header #nav #event:hover {
+    color: #eb8994;
+}
+
+/*réglage css pour l'animation*/
+#motionPath{
+    left: 0px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 0;
+    visibility: hidden;
+}
+
+.everyanicoach {
+    position: relative;
+}
+
+#animationcoach {
+    position: absolute;
+    border-radius: 200%;
+}
+
+/*test*/
+#lorem {
+    font-size: 200px;
+}
