@@ -2,134 +2,144 @@
 <html lang="fr">
 <!--head norme du site et lien avec le css-->
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>vibz.dance-Acceuil</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vibz.dance-Acceuil</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
+    
 <!--ensemble du contenu du site-->
 <body>
-    <!--header et élément de navigation-->
-    <header id="header">
-        <nav id="nav">
-            <a href="index.html"><img id="logo" src="https://www.vibz.dance/_next/image?url=%2Fassets%2Ftransparent_logo.png&w=64&q=75" alt="Logo" />
-            <a id="home" href="index.html">Accueil</a>
-            <a id="choregraphy" href="choregraphe.html">Chorégraphes</a>
-            <a id="event" href="evenements.html">Événements</a>
-        </nav>
-    </header>
-    <!--première section du site = premiere parti du site-->
-    <section id="sectionone" >
-        <video class="movie" autoplay loop muted>
-            <source src="vibz-assets/video/videoacceuil.mp4" type="video/mp4">
-        </video>
+  <!--header and navigation's element-->
+  <header id="header">
+    <nav id="nav">
+      <a href="index.html"><img id="logo" src="https://www.vibz.dance/_next/image?url=%2Fassets%2Ftransparent_logo.png&w=64&q=75" alt="Logo" />
+      <a id="home" href="index.html">Accueil</a>
+      <a id="choregraphy" href="choregraphe.html">Chorégraphes</a>
+      <a id="event" href="evenements.html">Événements</a>
+    </nav>
+  </header>
+  <!--first section of the website-->
+  <section id="sectionOne" >
+    <video class="movie" autoplay loop muted>
+      <source src="vibz-assets/video/videoacceuil.mp4" type="video/mp4">
+    </video>
+    <div class="textMovie" >
+      <h1 data-speed="1.8">Apprends à danser avec<br>
+      les meilleurs artistes du monde.</h1>
+      <p data-speed="1.8">Danse avec Vibz pour tous niveau, enseigné par les meilleurs danseurs et chorégraphe de notre époque</p>
+      <a href="" class="btn btnOne" data-speed="1.5">Essayer</a>
+    </div>      
+  </section>
+  <!--deuxieme section où il y a une image et du texte-->    
+  <section id="sectionTwo">
 
-        <div class="textmovie">
-            <h1>Apprends à danser avec<br>
-            les meilleurs artistes du monde.</h1>
-            <p>Danse avec Vibz pour tous niveau, enseigné par les meilleurs danseurs et chorégraphe de notre époque</p>
-            <a href="" id="btnone">Essayer</a>
-        </div>
-    </section>
-    <!--deuxieme section où il y a une image et du texte-->    
-    <section id="sectiontwo">
-        <div class="titleactu">
-            <h2>Actualité</h2>
-        </div>
-        <div class="everytuto">
-            <div class="imgtuto">
-                <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Ftutorials%252Fgodance-jerkyjessy%252Fgodance_jerkyjessy_coverpreview.jpg%3Falt%3Dmedia%26token%3D901f1d16-b6b6-4d58-9fe6-37aa94d91392&w=1200&q=75">
+    <div class="titleActu">
+      <h2>Actualité</h2>
+    </div>
+    <div class="everyTuto">
+      <video id="movieTuto" class="movieTuto" loop  muted>
+          <source src="vibz-assets/video/hoverImgActu.mp4" type="video/mp4">
+      </video>
+      <div id="imgTuto" class="imgTuto">
+          <img class="radiusImgTuto" src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Ftutorials%252Fgodance-jerkyjessy%252Fgodance_jerkyjessy_coverpreview.jpg%3Falt%3Dmedia%26token%3D901f1d16-b6b6-4d58-9fe6-37aa94d91392&w=1200&q=75">
+      </div>
+      <div class="textTuto">
+        <h4>Go Dance - Afro B & Busy Signal</h4>
+        <h6>Jerky Jessy</h6><br>
+        <label></label><br>
+        <a href="" class="btn btnTwo">Voir le cour</a>
+      </div>
+    </div>
+  </section>
+  <!--troisieme section ou on dipose d'une grille et d'un svg et d'une animation qui seraz l'objet du svg-->
+  <section id="sectionThree">
+      <div class="titleCoach">
+        <h2>Encadré par les meilleurs</h2>
+      </div>
+      <div class="everyAniCoach">
+        <!--video du svg-->
+        <img id="animationCoach" img src="vibz-assets/video/coachanimation.gif">
+        <!--chemin svg-->
+        <svg id="motionPath" width="100%" height="400" preserveAspectRatio="xMinYMin" viewBox="0 0 400 200">
+          <path stroke="black" fill="none"
+            d="M0,0 C-3,44 48,129.5 88,149.5 115.9999,163.4998 377.128,194.483 537.74,182.062 698.351,169.64 803.445,122.311 804.374,96.187 805.5395,63.411 707.236,10.094 605.56,1.298 503.883,-7.503 488.832,50.712 490.5,73.998 " />
+        </svg>
+        <!--hoverCoach Img-->
+        <img id="bounHover" class="hoverCoach" src="vibz-assets/img/bounHover.png" alt="Présentation de Boun">
+        <img id="amaliaHover" class="hoverCoach" src="vibz-assets/img/amaliaHover.png" alt="Présentation d'Amalia">
+        <img id="angelinaHover" class="hoverCoach" src="vibz-assets/img/angelinaHover.png" alt="Présentation d' Angelina">
+        <img id="danteHover" class="hoverCoach" src="vibz-assets/img/danteHover.png" alt="Présentation de Dante">
+        <img id="jerkyHover" class="hoverCoach" src="vibz-assets/img/jerkyHover.png" alt="Présentation de Jerky">
+        <img id="ralphHover" class="hoverCoach" src="vibz-assets/img/ralphHover.png" alt="Présentation de Ralph">
+        <img id="soniaHover" class="hoverCoach" src="vibz-assets/img/soniaHover.png" alt="Présentation de Sonia">
+        <img id="stevenHover" class="hoverCoach" src="vibz-assets/img/stevenHover.png" alt="Présentation de Steven">
+        <!--plusieurs images qui forment une grille grace au css-->
+        <div class="container">
+          <div id="grille" class="grille">
+            <div class="firstLine">
+              <div id="coachOne" class="coachOne">
+                <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fboun%252Fboun_profile_picture.jpg%3Falt%3Dmedia%26token%3D9c25cb56-d359-4a05-9c46-269ebfd60233&w=128&q=75"
+                  alt="image coach"><p>Boun</p>
+              </div>
+              <div id="coachTwo" class="coachTwo">
+                <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Famalia-salle%252Famalia_salle_profile_picture.jpg%3Falt%3Dmedia%26token%3Dde2f6868-88d7-4ff1-a062-2671416c5f69&w=128&q=75"
+                  alt="image coach"><p >Amalia Salle</p>
+              </div>
+              <div id="coachThree" class="coachThree">
+                  <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fralph-beaubrun%252Fralph_beaubrun_profile_picture.jpg%3Falt%3Dmedia%26token%3D3e34596b-1ef4-49de-a685-628c40fd3b8f&w=128&q=75"
+                  alt="image coach"><p>Ralph Beaubrun</p>
+              </div>
             </div>
-            <div class="texttuto">
-                <h4>Go Dance - Afro B & Busy Signal</h4>
-                <h6>Jerky Jessy</h6><br>
-                <label></label><br>
-                <a href="" id="btntwo">Voir le cour</a>
+            <div class="secondLine">
+              <div id="coachFour" class="coachFour">
+                <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fjerky-jessy%252Fjerky_jessy_profile_picture.jpg%3Falt%3Dmedia%26token%3D17b07dfc-0f66-4710-b7e5-4c1dfb697aa8&w=128&q=75"
+                  alt="image coach"><p>Jerky Jessy</p>
+              </div>
+              <div id="test">
+                <div id="coachFive" class="coachFive">
+                  <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fsonia-soupha%252Fsonia_soupha_profile_picture.jpg%3Falt%3Dmedia%26token%3Dffe6ced4-2158-4cf2-9b3c-b516e6933300&w=128&q=75"
+                  alt="image coach"><p>Sonia Soupha</p>
+                </div>
+              </div>
+              <div id="coachSix" class="coachSix">
+                <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fangelina-bruno%252Fangelina_bruno_profile_picture.jpg%3Falt%3Dmedia%26token%3De5d7a3f4-0ad6-43d7-8d41-f0ca36f700e2&w=128&q=75"
+                  alt="image coach"><p>Angelina Bruno</p>
+              </div>
             </div>
-        </div>
-    </section>
-    <!--troisieme section ou on dipose d'une grille et d'un svg et d'une animation qui seraz l'objet du svg-->
-    <section id="sectionthree">
-        <div class="titlecoach">
-            <h2>Encadré par les meilleurs</h2>
-        </div>
-        <div class="everyanicoach">
-            <!--video du svg-->
-            <img id="animationcoach" img src="vibz-assets/video/coachanimation.gif">
-            <!--chemin svg-->
-            <svg id="motionPath" width="100%" height="400" preserveAspectRatio="xMinYMin" viewBox="0 0 400 200">
-                <path stroke="black" fill="none"
-                    d="M0,0 C-3,44 48,129.5 88,149.5 115.9999,163.4998 377.128,194.483 537.74,182.062 698.351,169.64 803.445,122.311 804.374,96.187 805.5395,63.411 707.236,10.094 605.56,1.298 503.883,-7.503 488.832,50.712 490.5,73.998 " />
-            </svg>
-            <!--plusieurs images qui forment une grille grace au css-->
-            <div class="grille">
-                <div class="fisrtlign">
-                    <div class="coachone">
-                        <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fboun%252Fboun_profile_picture.jpg%3Falt%3Dmedia%26token%3D9c25cb56-d359-4a05-9c46-269ebfd60233&w=128&q=75"
-                        alt="image coach"><p>Boun</p>
-                    </div>
-
-                    <div class="coachtwo">
-                        <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Famalia-salle%252Famalia_salle_profile_picture.jpg%3Falt%3Dmedia%26token%3Dde2f6868-88d7-4ff1-a062-2671416c5f69&w=128&q=75"
-                        alt="image coach"><p >Amalia Salle</p>
-                    </div>
-
-                    <div class="coachthree">
-                        <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fralph-beaubrun%252Fralph_beaubrun_profile_picture.jpg%3Falt%3Dmedia%26token%3D3e34596b-1ef4-49de-a685-628c40fd3b8f&w=128&q=75"
-                        alt="image coach"><p>Ralph Beaubrun</p>
-                    </div>
-                </div>
-                <div class="secondlign">
-                    <div class="coachfour">
-                        <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fjerky-jessy%252Fjerky_jessy_profile_picture.jpg%3Falt%3Dmedia%26token%3D17b07dfc-0f66-4710-b7e5-4c1dfb697aa8&w=128&q=75"
-                        alt="image coach"><p>Jerky Jessy</p>
-                    </div>
-
-                    <div class="coachfive">
-                        <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fsonia-soupha%252Fsonia_soupha_profile_picture.jpg%3Falt%3Dmedia%26token%3Dffe6ced4-2158-4cf2-9b3c-b516e6933300&w=128&q=75"
-                        alt="image coach"><p>Sonia Soupha</p>
-                    </div>
-
-                    <div class="coachsix">
-                        <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fangelina-bruno%252Fangelina_bruno_profile_picture.jpg%3Falt%3Dmedia%26token%3De5d7a3f4-0ad6-43d7-8d41-f0ca36f700e2&w=128&q=75"
-                        alt="image coach"><p>Angelina Bruno</p>
-                    </div>
-                </div>
-                <div class="thirdlign">
-                    <div class="coachseven">
-                        <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fsteven-deba%252Fsteven_deba_profile_picture.jpg%3Falt%3Dmedia%26token%3D087ee11c-7c75-4ff1-a467-c4d34cd9067d&w=128&q=75"
-                        alt="image coach"><p>Steven Deba</p>
-                    </div>
-
-                    <div class="coachheight">
-                        <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fdante-mayilla%252Fdante_profile_picture.jpg%3Falt%3Dmedia%26token%3Daf656cca-d666-4e8f-b3cd-88b8c456d04a&w=128&q=75"
-                        alt="image coach"><p>Dante Mayilla</p>
-                    </div>
-
-                    <div class="more">
-                        <img src="https://www.vibz.dance/_next/image?url=%2Fassets%2Fhome%2Fmore_button.png&w=128&q=75"
-                        alt="image +"><p>Et plus</p>
-                    </div>
-                </div>
+            <div class="thirdLine">
+              <div id="coachSeven" class="coachSeven">
+                <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fsteven-deba%252Fsteven_deba_profile_picture.jpg%3Falt%3Dmedia%26token%3D087ee11c-7c75-4ff1-a467-c4d34cd9067d&w=128&q=75"
+                alt="image coach"><p>Steven Deba</p>
+              </div>
+              <div id="coachHeight" class="coachHeight">
+                <img src="https://www.vibz.dance/_next/image?url=https%3A%2F%2Ffirebasestorage.googleapis.com%2Fv0%2Fb%2Fworldcandance-d82ad.appspot.com%2Fo%2Fchoreographers%252Fdante-mayilla%252Fdante_profile_picture.jpg%3Falt%3Dmedia%26token%3Daf656cca-d666-4e8f-b3cd-88b8c456d04a&w=128&q=75"
+                alt="image coach"><p>Dante Mayilla</p>
+              </div>
+              <div class="more">
+                  *<img src="https://www.vibz.dance/_next/image?url=%2Fassets%2Fhome%2Fmore_button.png&w=128&q=75"
+                  *alt="image +"><p>Et plus</p>
+              </div>
             </div>
+          </div>
         </div>
-        <section id="lorem">
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis rerum ipsam modi cupiditate molestias
-                expedita recusandae, et officiis voluptatibus culpa, nobis, atque temporibus ut alias dolor voluptates facere
-                nisi?
-            </p>
-        </section>
+      </div>
+    <section id="lorem">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi omnis rerum ipsam modi cupiditate molestias
+        expedita recusandae, et officiis voluptatibus culpa, nobis, atque temporibus ut alias dolor voluptates facere
+        nisi?
+      </p>
     </section>
-    
-    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
-    <script src="script.js"></script>
+  </section>
+  <!--pluggins-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/MotionPathPlugin.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
