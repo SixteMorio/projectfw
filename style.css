@@ -300,6 +300,10 @@ h6 {
   color: #eb8994;
 }
 
+#header #nav #demo:hover {
+  color: #eb8994;
+}
+
 /*réglage css pour l'animation*/
 #motionPath{
   left: 0px;
